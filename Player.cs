@@ -53,5 +53,6 @@ namespace LabaCreatedWithTeamWork
         {
             health -=damage;
         }
+        //пробный коммит
     }
 }
