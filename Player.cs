@@ -54,5 +54,6 @@ namespace LabaCreatedWithTeamWork
             health -=damage;
         }
         //пробный коммит
+        // пробный коммит номер 2
     }
 }
