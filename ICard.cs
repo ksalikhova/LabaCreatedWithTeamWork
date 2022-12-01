@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CardGame
+namespace LabaCreatedWithTeamWork
 {
-    internal interface ICard
+    public interface ICard
     {
 
         string Name { get; init; }

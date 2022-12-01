@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CardGame
+namespace LabaCreatedWithTeamWork
 {
-    internal class Creature : Card
+    public class Creature : Card
     {
         public Creature(string name, int damage, int cardHealth) : base(name, damage, cardHealth)
         {

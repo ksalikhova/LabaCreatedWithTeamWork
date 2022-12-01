@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CardGame
+namespace LabaCreatedWithTeamWork
 {
-    internal class Spell : Card
+    public class Spell : Card
     {
         public enum SpellType
         {
