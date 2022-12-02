@@ -32,5 +32,12 @@ namespace LabaCreatedWithTeamWork
             Damage = damage;
             CardHealth = cardHealth;
         }
+
+        public Card() 
+        {
+            Name = "";
+            Damage = 0;
+            CardHealth = 0;
+        }
     }
 }
