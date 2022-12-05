@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LabaCreatedWithTeamWork
 {
-    public class Card : ICard
+    public class Card : ICard, ICloneable
     {
 
         public string Name
@@ -26,11 +26,18 @@ namespace LabaCreatedWithTeamWork
             init { this.CardHealth = value; }
         }
 
-        public Card(string name, int damage, int cardHealth)
+        public int CardHeal 
+        {
+            get { return CardHeal; }
+            init { this.CardHeal = value; }
+        }
+
+        public Card(string name, int damage, int cardHealth, int cardHeal)
         {
             Name = name;
             Damage = damage;
             CardHealth = cardHealth;
+            CardHeal = cardHeal;
         }
 
         public Card() 
@@ -38,6 +45,13 @@ namespace LabaCreatedWithTeamWork
             Name = "";
             Damage = 0;
             CardHealth = 0;
+            CardHeal = 0;
+        }
+
+        public object Clone()
+        {
+            var cardClone = new Card();
+            return cardClone;
         }
     }
 }

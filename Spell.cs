@@ -11,24 +11,29 @@ namespace LabaCreatedWithTeamWork
         public enum SpellType
         {
             Power,
-            Protection
+            Protection,
+            Heal
         }
 
 
 
-        public Spell(SpellType type, string name, int damage, int cardHealth) : base(name, damage, cardHealth)
+        public Spell(SpellType type, string name, int damage, int cardHealth, int cardHeal) : base(name, damage, cardHealth, cardHeal)
         {
 
             this.Name = name;
-            if (type == SpellType.Power)
+            switch(type ) 
             {
-                this.Damage = damage;
-                this.CardHealth = 0;
-            }
-            else
-            {
-                this.Damage = 0;
-                this.CardHealth = cardHealth;
+                case SpellType.Power:
+                    this.Damage = damage;
+                    break;
+                    case SpellType.Protection: 
+                    this.CardHealth = cardHealth;
+                    break;
+                    case SpellType.Heal:
+                    this.CardHeal = cardHealth;
+                    break;
+                    default:
+                    break;
             }
 
         }

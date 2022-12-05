@@ -12,5 +12,6 @@ namespace LabaCreatedWithTeamWork
         string Name { get; init; }
         int Damage { get; init; }
         int CardHealth { get; init; }
+        int CardHeal { get; init; }
     }
 }
